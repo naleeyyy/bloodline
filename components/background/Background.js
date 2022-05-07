@@ -12,6 +12,7 @@ const Cell = (props) => {
     useFrame(() => {
       ref.current.rotation.x += 0.005
       ref.current.rotation.y += 0.005
+      ref.current.rotation.z += 0.005
     //   ref.current.position.x -= 0.05
     })
 
@@ -27,11 +28,11 @@ const Cell = (props) => {
     )
   }
 
-const Background = () => {
+const Background = (props) => {
     return (
         <Canvas camera={{position: [0, 0, 20]}} className={styles.canvas}>
             <ambientLight />
-            <Cell color="red" position={[20, 0, 0]} />
+            <Cell color="red" position={[15, 0, 0]} />
         </Canvas>
     )
 }
