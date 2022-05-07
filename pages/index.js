@@ -1,11 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Background from '../components/background/Background'
 import styles from '../styles/Home.module.css'
-import Head from "next/head";
-import Image from "next/image";
 import Navigation from "../components/navigation/Navigation.js";
-import styles from "../styles/Home.module.css";
 import { useEffect, useRef } from 'react';
 import createScrollSnap from 'scroll-snap';
 
